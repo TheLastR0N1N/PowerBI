@@ -1,0 +1,26 @@
+1. Microsoft Excel, SQL Server, TXT/CSV files and etc;
+2. Clicking 'GetData' on PowerBI Desktop Home ribbon or 'New Source' on PowerBI Query Editor;
+3. Clicking 'Refresh' on PowerBI Desktop or 'Refresh Preview' on PowerBI Query Editor;
+4. XLSX, CSV and etc;
+5. Gives information about the table;
+6. I did;
+7. I'd click the icon next to the column name and choose Date datatype;
+8. 'Load' loads the data directly while 'Transform Data' lets you change data details;
+9. Incorrect login credentials;
+10. First click 'Data source settings', then 'Change Source...', after all choose new source's path;
+11. 
+let
+    Source = YourDataSourceHere,
+    FilteredRows = Table.SelectRows(Source, each [Quantity] > 1)
+in
+    FilteredRows
+12. 'Refresh';
+13. Change the datatype;
+14. 
+let
+    YearParam = Parameters[YearParam],
+    Source = Sql.Database("YourServerName", "YourDatabaseName"),
+    FilteredTable = Table.SelectRows(Source{[Schema="dbo", Item="YourTableName"]}[Data], each Date.Year([YourDateColumn]) = YearParam)
+in
+    FilteredTable
+15. Go to Power Automate, then create a new flow. After choosing a trigger, add 'Refresh a dataset'. After all select the workspace and dataset
