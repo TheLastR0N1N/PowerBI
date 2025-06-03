@@ -1,0 +1,5 @@
+1. Bar Chart, Pie Chart, Scatter Chart and etc;
+2. There's a Slicer button on Build Visual part. Click it;
+3. Bar Chart is horizontal, Column Chart is vertical;
+4. Visualizations > Format Page > Canvas Background > Color;
+5. Go to a lower level in the hierarchy. Example: Year > Quarter > Month > Day;
