@@ -1,0 +1,21 @@
+DAX stands for Data Analysis Expressions.
+
+A DAX formula to sum the Sales column is: Total Sales = SUM(Sheet1[Sales]).
+
+A calculated column evaluates row by row and stores results in the table, while a measure calculates dynamically based on filters in a visual.
+
+The DIVIDE formula for Profit Margin is: Profit Margin = DIVIDE(Sheet1[Profit], Sheet1[Sales]).
+
+COUNTROWS() returns the number of rows in a table or table expression.
+
+A circular dependency error happens when a calculated column refers to itself directly or indirectly, creating a loop.
+
+Row context evaluates one row at a time (like in calculated columns), while filter context comes from slicers, visuals, or other filters that affect the result of a measure.
+
+
+
+
+
+
+
+
